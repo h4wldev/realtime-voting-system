@@ -1,0 +1,97 @@
+/**
+ *  INDEX
+ */
+
+section#index {
+  .information {
+    padding: 25px 0;
+    text-align: center;
+
+    h1 {
+      font-size: 24px;
+      margin: 5px 0;
+      color: #4449ad;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .description {
+      width: 100%;
+      padding-top: 30px;
+
+      b {
+        color: #4449ad;
+      }
+    }
+  }
+
+  .list {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: table;
+
+    .content {
+      width: 100%;
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      top: -40px;
+
+      .el-radio-group {
+        top: 30px;
+        width: 100%;
+
+        .el-radio-button {
+          display: block;
+          width: 100%;
+          max-width: 300px;
+          margin: 5px auto;
+
+          .el-radio-button__inner {
+            width: 100%;
+            border: 1px solid #dcdfe6;
+            border-radius: 3px;
+            padding: 20px;
+
+            &:hover {
+              color: #4449ad;
+            }
+          }
+
+          &.is-active {
+            .el-radio-button__inner {
+              background-color: #4449ad;
+              border-color: #4449ad;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logout {
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+
+    .el-button > span {
+      color: #4449ad;
+      border-bottom: 1px solid #4449ad;
+    }
+  }
+}
